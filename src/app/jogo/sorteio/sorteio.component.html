@@ -1,0 +1,20 @@
+<!-- <p>sorteio works!</p> -->
+<form [formGroup]="sorteioForm" (submit)="fnSorteia()">
+
+  <mat-form-field class="mat-form01" appearance="outline">
+
+    <mat-label class="matlabel">Digite um número para jogar:</mat-label>
+    <input id="entrada" type="text" min="1" max="100" formControlName="enterModel"
+      matInput placeholder="Números de 1 a 100">
+    <button class="botao" type="submit" [disabled]="sorteioForm.invalid" mat-raised-button color="red">Sortear</button>
+
+  </mat-form-field>
+
+
+  </form>
+
+  <mat-card class="card"><strong class='resultado'>resultado: {{gerador}}</strong></mat-card>
+
+  <mat-form-field appearance="outline">
+    <textarea id="resposta" type="text" [(ngModel)]="resultado" readonly matInput></textarea>
+  </mat-form-field>

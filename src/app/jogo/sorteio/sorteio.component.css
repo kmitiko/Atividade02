@@ -1,0 +1,38 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+.resposta {
+  font-size: 20px;
+  color: darkorange;
+}
+.matlabel{
+  font-size: 20px;
+}
+.botao {
+  width: 100px;
+  height: 40px;
+
+}
+#resposta {
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+}
+.card {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+
+}
+.caixa{
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+}
+.label02 {
+  font-size: 20px;
+}
